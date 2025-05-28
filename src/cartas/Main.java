@@ -23,7 +23,7 @@ public class Main {
 
         System.out.println(deck.removeFromFront().display());
 
-
+        System.out.println(deck.display());
 
     }
 }

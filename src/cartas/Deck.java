@@ -98,4 +98,20 @@ public class Deck {
         deck.add(card);
     }
 
+    public String display() {
+        int num_cards = deck.size();
+        String display = "";
+        int counter = 0;
+        for (int i = 0; i < num_cards; i++) {
+            Card card = (Card) deck.get(i);
+            display = display + card.display() + " ";
+            counter++;
+            if (counter == 13) {
+                display = display + "\n";
+                counter = 0;
+            }
+        }
+        return display;
+    }
+
 }

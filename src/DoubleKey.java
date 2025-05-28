@@ -1,5 +1,3 @@
-import java.util.Objects;
-
 public class DoubleKey {
 
     private String key1, key2;
@@ -36,15 +34,5 @@ public class DoubleKey {
         this.key2 = key2;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (o == null || getClass() != o.getClass()) return false;
-        DoubleKey doubleKey = (DoubleKey) o;
-        return Objects.equals(key1, doubleKey.key1) && Objects.equals(key2, doubleKey.key2);
-    }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(key1, key2);
-    }
 }
