@@ -2,11 +2,11 @@ package humor;
 
 public class HappyObject extends MoodyObject {
 
-    // retorna o humor
+    // redefine o humor
     protected String getMood(){
         return "happy";
     }
-
+    // especialização
     public void laugh(){
         System.out.println("hahaha");
     }

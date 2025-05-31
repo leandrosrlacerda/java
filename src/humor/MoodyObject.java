@@ -1,11 +1,9 @@
 package humor;
 
-public class MoodyObject {
+public abstract class MoodyObject {
 
     // retorna o humor
-    protected String getMood() {
-        return "moody";
-    }
+    protected abstract String getMood();
 
     // pergunta ao objeto como ele se sente
     public void queryMood(){
