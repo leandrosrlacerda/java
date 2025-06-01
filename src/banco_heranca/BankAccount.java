@@ -5,25 +5,27 @@ public class BankAccount {
     // saldo da conta
     private double balance;
 
-    public BankAccount(double initDeposit){
+    public BankAccount(double initDeposit) {
         setBalance(initDeposit);
     }
+
     // deposita dinheiro na conta
-    public void deposit(double amount){
+    public void deposit(double amount) {
         setBalance(getBalance() + amount);
     }
+
     // saca dinheiro da conta
-    public double withdraw(double amount){
+    public double withdraw(double amount) {
         if (amount >= balance) {
             System.out.println("Insufficient funds");
             return balance;
-        }else{
+        } else {
             balance -= amount;
         }
         return amount;
     }
 
-    public double getBalance(){
+    public double getBalance() {
         return balance;
     }
 

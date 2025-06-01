@@ -18,11 +18,11 @@ public class Main {
         timeMaturityAccount.deposit(300);
         timeMaturityAccount.addInterest();
         System.out.println("Current balance timeMaturityAccount:" + timeMaturityAccount.getBalance());
-        timeMaturityAccount.setMature(true);
+        timeMaturityAccount.setMature(false);
         timeMaturityAccount.withdraw(130);
         System.out.println("Current balance timeMaturityAccount:" + timeMaturityAccount.getBalance());
 
-        CheckingAccount checkingAccount = new CheckingAccount(100, 2);
+        CheckingAccount checkingAccount = new CheckingAccount(100, 2, 4);
         checkingAccount.deposit(1000);
         checkingAccount.withdraw(50);
         System.out.println("Current balance checkingAccount: " + checkingAccount.getBalance());

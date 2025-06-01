@@ -2,7 +2,9 @@ package banco_heranca;
 
 public class TimeMaturityAccount extends SavingsAccount {
 
+    // vencimento
     private boolean mature;
+    // tqxa de remuneração
     private double feeRate;
 
     public TimeMaturityAccount(double initBalance, double interestRate, double feeRate){
@@ -29,7 +31,7 @@ public class TimeMaturityAccount extends SavingsAccount {
 
     // define o vencimento
     public void setMature(boolean mature) {
-        this.mature = true;
+        this.mature = mature;
     }
 
     // % de taxa para saque antecipado

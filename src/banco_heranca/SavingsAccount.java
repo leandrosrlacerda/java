@@ -2,6 +2,7 @@ package banco_heranca;
 
 public class SavingsAccount extends BankAccount{
 
+    // taxa de juros
     private double interestRate;
 
     public SavingsAccount(double initBalance, double interestRate){

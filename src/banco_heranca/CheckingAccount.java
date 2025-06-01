@@ -2,18 +2,21 @@ package banco_heranca;
 
 public class CheckingAccount extends BankAccount {
 
+    // variavel de cota mensal de transações
     private int monthlyQuota;
+    // numero de transações
     private int transactionCount;
+    // Tarifa
     private double fee;
 
-    public CheckingAccount(double initBalance, int trans){
+    public CheckingAccount(double initBalance, int monthlyQuota, double fee) {
         super(initBalance);
-        setMonthlyQuota(trans);
+        setMonthlyQuota(monthlyQuota);
         setFee(fee);
     }
 
     // sobrepõe withdraw de BankAccount
-    public double withdraw(double amount){
+    public double withdraw(double amount) {
         transactionCount++;
         return super.withdraw(amount);
     }
@@ -21,7 +24,7 @@ public class CheckingAccount extends BankAccount {
     // acessa as taxas se ultrapassou o limite de transações
     // Taxa por transação
 
-    public void accessFee(){
+    public void accessFee() {
         int extra = getTransactionCount() - getMonthlyQuota();
         if (extra > 0) {
             double total_fee = extra * getFee();
