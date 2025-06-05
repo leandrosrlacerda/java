@@ -16,9 +16,6 @@ public class Polimorfismo {
             return "The glass is half empty.";
         }
 
-        public void makeSpeak(PessimisticObject obj) {
-            System.out.println(obj.speak());
-        }
     }
 
     public static class OptimisticObject extends PersonalityObject {
@@ -26,28 +23,17 @@ public class Polimorfismo {
             return "The glass is half full.";
         }
 
-        public void makeSpeak(OptimisticObject obj) {
-            System.out.println(obj.speak());
-        }
     }
 
     public static class IntrovertedObject extends PersonalityObject {
         public String speak() {
             return "hi";
         }
-
-        public void makeSpeak(IntrovertedObject obj) {
-            System.out.println(obj.speak());
-        }
     }
 
     public static class ExtrovertedObject extends PersonalityObject {
         public String speak() {
             return "Hello, blah blah blah, did you know that blah blah blah.";
-        }
-
-        public void makeSpeak(ExtrovertedObject obj) {
-            System.out.println(obj.speak());
         }
     }
 
