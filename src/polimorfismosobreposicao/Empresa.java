@@ -8,7 +8,7 @@ public class Empresa {
     public static void main(String[] args) {
 
         Funcionario gerente = new Gerente("Leandro",4000, 1500);
-        Desenvolvedor desenvolvedor = new Desenvolvedor("Ana Luiza", 6000, "alto");
+        Desenvolvedor desenvolvedor = new Desenvolvedor("José", 6000, "alto");
 
         System.out.println(gerente); // Usa override
         System.out.println("Nome: " + desenvolvedor.getNome() +

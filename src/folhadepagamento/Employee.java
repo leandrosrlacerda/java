@@ -1,6 +1,6 @@
 package folhadepagamento;
 
-public class Employee {
+public abstract class Employee {
 
     private String first_name;
     private String last_name;
@@ -24,7 +24,10 @@ public class Employee {
         return this.last_name;
     }
 
-    public String toString(){
-        return this.first_name + " " + this.last_name + " " + this.salary;
+    public abstract double calculatePay();
+
+    public void printPaycheck(){
+        String full_name = last_name + ", " + first_name;
+        System.out.println("Pay: " + full_name + " $" + calculatePay());
     }
 }

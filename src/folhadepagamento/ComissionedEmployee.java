@@ -18,6 +18,10 @@ public class ComissionedEmployee extends Employee {
         this.units += units;
     }
 
+    public int getSales(){
+        return this.units;
+    }
+
     public void resetSales(){
         this.units = 0;
     }
