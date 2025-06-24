@@ -9,7 +9,7 @@ public class ComissionedEmployee extends Employee {
         super(first_name, last_name, salary);
         this.commission = commission;
     }
-
+    @Override
     public double calculatePay(){
         return getSalary() + (commission * units);
     }
