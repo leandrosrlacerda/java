@@ -16,5 +16,14 @@ public class Main {
         happyObject.queryMood();
         happyObject.laugh();
         System.out.println("");
+
+        MoodyObject moodyObject = new SadObject();
+        MoodyObject moodyObject2 = new HappyObject();
+        PsychiatristObject psychiatristObject = new PsychiatristObject();
+        psychiatristObject.examine(moodyObject);
+        psychiatristObject.examine(moodyObject2);
+        psychiatristObject.observe((SadObject) moodyObject);
+        psychiatristObject.observe((HappyObject) moodyObject2);
+
     }
 }
