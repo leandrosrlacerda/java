@@ -3,12 +3,6 @@ package banco_heranca;
 public class Main {
     public static void main(String[] args) {
 
-        BankAccount account = new BankAccount(100);
-        account.deposit(100);
-        System.out.println("Current balance:" + account.getBalance());
-        account.withdraw(50);
-        System.out.println("Current balance:" + account.getBalance());
-
         SavingsAccount savingsAccount = new SavingsAccount(100, 0.02);
         savingsAccount.deposit(300);
         savingsAccount.addInterest();
@@ -33,6 +27,17 @@ public class Main {
         System.out.println("Current balance overdraftAccount: " + overdraftAccount.getBalance());
         overdraftAccount.withdraw(50);
         System.out.println("Current balance overdraftAccount: " + overdraftAccount.getBalance());
+
+        System.out.println();
+
+        Bank accountBank = new Bank();
+        accountBank.addAccount("conta", savingsAccount);
+        accountBank.addAccount("conta2", overdraftAccount);
+        System.out.println("Total balance: " + accountBank.totalHoldings());
+        System.out.println("Number of accounts: " + accountBank.totalAccounts());
+        System.out.println();
+        System.out.println("O saldo da conta: " + accountBank.balance("conta"));
+        System.out.println("O saldo da conta 2: " + accountBank.balance("conta2"));
 
     }
 

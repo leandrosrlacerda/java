@@ -1,6 +1,6 @@
 package banco_heranca;
 
-public class BankAccount {
+public abstract class BankAccount {
 
     // saldo da conta
     private double balance;
