@@ -13,6 +13,7 @@ public class Bank {
 
     // método calcula o saldo total de todas as contas bancárias armazenadas no banco
     public double totalHoldings() {
+
         return calculateTotalBalance(accounts.values());
     }
 

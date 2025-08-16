@@ -11,6 +11,7 @@ public abstract class BankAccount {
 
     // deposita dinheiro na conta
     public void deposit(double amount) {
+
         setBalance(getBalance() + amount);
     }
 
