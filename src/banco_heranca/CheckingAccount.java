@@ -56,6 +56,6 @@ public class CheckingAccount extends BankAccount {
 }
 
 /*
-*Conta com cheques
+*Account com cheques
 *
  fee = (total_transactions - monthly_quota) * per_transaction_fee*/

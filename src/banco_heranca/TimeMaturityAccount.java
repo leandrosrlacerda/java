@@ -45,7 +45,7 @@ public class TimeMaturityAccount extends SavingsAccount {
 }
 
 /*
-*Conta com vencimento programado
+*Account com vencimento programado
 
 sem penalidade
 

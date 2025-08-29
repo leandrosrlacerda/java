@@ -31,7 +31,7 @@ public class SavingsAccount extends BankAccount{
 }
 
 /*
-*Conta poupanca
+*Account poupanca
 
 juros de 2%
 balance = balance + (balance * interest_rate)  */

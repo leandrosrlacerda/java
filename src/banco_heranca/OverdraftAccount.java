@@ -35,7 +35,7 @@ public class OverdraftAccount extends BankAccount{
 
 }
 
- /*Conta com cheque especial
+ /*Account com cheque especial
 
 Juros apenas com saldo negativo
 balance = balance + (balance * interest_rate)*/

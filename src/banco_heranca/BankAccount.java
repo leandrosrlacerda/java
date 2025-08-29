@@ -37,7 +37,7 @@ public abstract class BankAccount {
 
 
 /*
-*Conta
+*Account
 
 depositar
 sacar
