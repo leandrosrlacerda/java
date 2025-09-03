@@ -1,4 +1,4 @@
-package Vetores;
+package vetores;
 
 import java.util.Scanner;
 

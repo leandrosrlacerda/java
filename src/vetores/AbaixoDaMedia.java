@@ -1,8 +1,8 @@
-package Vetores;
+package vetores;
 
 import java.util.Scanner;
 
-public class MediaPares {
+public class AbaixoDaMedia {
 
     public static void main(String[] args) {
 
@@ -10,11 +10,10 @@ public class MediaPares {
 
         System.out.print("Quantos elementos vai ter o vetor? ");
         int n = input.nextInt();
+        double somaElementos = 0;
+        double media = 0;
 
         double[] vector = new double[n];
-
-        double somaNumerosPares = 0;
-        int quantidadePares = 0;
 
         for (int i = 0; i < vector.length; i++) {
             System.out.print("Digite um número: ");
@@ -22,22 +21,20 @@ public class MediaPares {
         }
 
         for (int i = 0; i < vector.length; i++) {
-            if (vector[i] % 2 == 0) {
-                somaNumerosPares += vector[i];
-                quantidadePares++;
+            somaElementos += vector[i];
+        }
+
+        media = somaElementos / vector.length;
+
+        System.out.printf("MEDIA DO VETOR =  %.3f%n", media);
+        System.out.println("ELEMENTOS ABAIXO DA MEDIA:");
+        for (int i = 0; i < vector.length; i++) {
+            if (vector[i] < media) {
+                System.out.printf("%.1f%n", vector[i]);
             }
         }
 
-        if (quantidadePares == 0) {
-            System.out.println("NENHUM NUMERO PAR FOI ENCONTRADO");
-        } else {
-
-            System.out.printf("MEDIA DOS PARES = %.1f%n", somaNumerosPares / quantidadePares);
-        }
-
         input.close();
-
     }
+
 }
-
-

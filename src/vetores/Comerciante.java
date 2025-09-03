@@ -1,4 +1,4 @@
-package Vetores;
+package vetores;
 
 import java.util.Locale;
 import java.util.Scanner;
@@ -10,7 +10,7 @@ public class Comerciante {
         Scanner sc = new Scanner(System.in);
         System.out.print("Serão digitados dados de quantos produtos? ");
         int n = sc.nextInt();
-        
+
         int menos10 = 0, entre10e20 = 0, mais20 = 0;
         double totalCompra = 0, totalVenda = 0;
 
