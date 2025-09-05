@@ -47,7 +47,7 @@ public class MainFuncionario {
        Funcionario f = list.stream().filter(x -> x.getId() == id).findFirst().orElse(null);
 
         //   Integer pos = position(list, id);
-
+        
         if (f == null){
             System.out.println("Employee not found!");
         } else {
