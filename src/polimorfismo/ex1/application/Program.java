@@ -1,12 +1,12 @@
-package polimorfismo.application;
+package polimorfismo.ex1.application;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 import java.util.Scanner;
 
-import polimorfismo.entities.Employee;
-import polimorfismo.entities.OutsourceEmployee;
+import polimorfismo.ex1.entities.Employee;
+import polimorfismo.ex1.entities.OutsourceEmployee;
 
 public class Program {
 

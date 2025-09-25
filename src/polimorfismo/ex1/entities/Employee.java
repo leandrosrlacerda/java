@@ -1,4 +1,4 @@
-package polimorfismo.entities;
+package polimorfismo.ex1.entities;
 
 public class Employee {
 
