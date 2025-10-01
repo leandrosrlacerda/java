@@ -1,13 +1,12 @@
 package excecoes.ex4.application;
 
-import excecoes.ex4.model.entities.Reservation;
-import excecoes.ex4.model.exceptions.DomainException;
-
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.InputMismatchException;
 import java.util.Scanner;
+
+import excecoes.ex4.model.entities.Reservation;
+import excecoes.ex4.model.exceptions.DomainException;
 
 public class Program {
     public static void main(String[] args) {
